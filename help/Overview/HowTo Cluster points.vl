@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2025.7.0-0119-g1236945387" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2025.7.0-0119-g1236945387" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DeWpXdWzVzuO8soS2TAwSI" LanguageVersion="2025.7.0-0167-g0cfb068072" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2025.7.0-0167-g0cfb068072" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.DBSCAN" CanvasType="FullCategory">
       <!--
@@ -102,10 +102,10 @@
               <Pin Id="O8k5ePEIzN6PwFYG4BsFgY" Name="Show Helpers" Kind="InputPin" />
               <Pin Id="ObqOLmX2r9dN4vb98AA18p" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="453,187,46,22" Id="TNZMWJVA3XxQBur4qOH0ft">
-              <p:NodeReference LastCategoryFullName="2D.Cluster" LastDependency="VL.DBSCAN.vl">
+            <Node Bounds="452,190,65,26" Id="TNZMWJVA3XxQBur4qOH0ft">
+              <p:NodeReference LastCategoryFullName="2D.Dbscan.ClusterT" LastDependency="VL.Dbscan.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Cluster" />
+                <CategoryReference Kind="RecordType" Name="Cluster" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
               <Pin Id="AdWtyfdXpzSOcWPYZx4Kzs" Name="Input" Kind="StateInputPin" />
@@ -505,11 +505,21 @@
                 </p:TypeAnnotation>
               </Pad>
               <Node Bounds="358,557,95,19" Id="PuCcefRDB4bNzEb3qdlhIH">
-                <p:NodeReference LastCategoryFullName="2D.Dbscan" LastDependency="VL.Dbscan.vl">
+                <p:NodeReference LastCategoryFullName="2D.Dbscan" LastDependency="VL.Dbscan.vl" OverloadStrategy="AllPinsThatAreNotCommon">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="2D" />
                   <CategoryReference Kind="ClassType" Name="Dbscan" />
                   <Choice Kind="OperationCallFlag" Name="CalculateClusters" />
+                  <PinReference Kind="InputPin" Name="Input">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Spread" />
+                      <p:TypeArguments>
+                        <TypeReference LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                          <Choice Kind="TypeFlag" Name="Vector2" />
+                        </TypeReference>
+                      </p:TypeArguments>
+                    </p:DataTypeReference>
+                  </PinReference>
                 </p:NodeReference>
                 <Pin Id="OBXxEGfW5BfNjtXbLHWlp3" Name="Input" Kind="StateInputPin" />
                 <Pin Id="KygAW4NkMowOeK7H9Mc6DF" Name="Epsilon" Kind="InputPin" />
@@ -559,6 +569,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QtqQUt6r7sJNKYBuxDce1f" Location="VL.Skia" Version="2025.7.0-0119-g1236945387" />
+  <NugetDependency Id="QtqQUt6r7sJNKYBuxDce1f" Location="VL.Skia" Version="2025.7.0-0167-g0cfb068072" />
   <NugetDependency Id="CB4w73SI5G1LMuxrIoJ9MI" Location="VL.DBSCAN" Version="0.0.0.0" />
 </Document>
