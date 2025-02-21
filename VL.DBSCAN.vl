@@ -230,7 +230,7 @@
                   <Pin Id="MEFNDoB5w9yQDGAk2TOPNS" Name="Minimum Points Per Cluster" Kind="InputPin" />
                   <Pin Id="AsFTfTVyMOYMglHbz1VGjR" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="599,380,50,26" Id="Hc811RQoADxNnNKvRK8qSM">
+                <Node Bounds="599,360,50,26" Id="Hc811RQoADxNnNKvRK8qSM">
                   <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <FullNameCategoryReference ID="Collections.Sequence" />
@@ -239,7 +239,6 @@
                   <Pin Id="EL1XJ2pJXnuNj8Wfm4T0rg" Name="Input" Kind="StateInputPin" />
                   <Pin Id="A5ixxxbVUFaLQFKQbOlTjn" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Link Id="NWceGwt5zcmQcqdQoU70mQ" Ids="A5ixxxbVUFaLQFKQbOlTjn,KaFFE7aBBvxPsis9Jb9xNQ" />
                 <Node Bounds="741,401,62,19" Id="RWxIVfoTmF0M6c79tRipVs">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -317,6 +316,16 @@
                 <Link Id="PDvgASls9O4NryOh0L98mU" Ids="JuTfzRhfBldLRGUuLoq3C3,BVkOw8IoJ3VMdxQvJjrlmq" />
                 <Link Id="Skmp3t4iEZSPDNxN2hVvXP" Ids="N8FzRRm4RHLN8sBPBp8wRW,QqWLb2e4yxFNOSRf6ATw4B" />
                 <Link Id="S4YWwmKFLvJLXITR5Chaxt" Ids="QqWLb2e4yxFNOSRf6ATw4B,BXg9HbY2Av3Og8cxq630QI" />
+                <Node Bounds="599,410,36,19" Id="RFfdyWE7fAdPlNI5s8q5IL">
+                  <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Cast" />
+                  </p:NodeReference>
+                  <Pin Id="V1Sq1PGJIXYNXLSeTXeeT9" Name="Input" Kind="InputPin" />
+                  <Pin Id="Td2QKLywfQvOKTmD1MOjdL" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="Lj2UgEI80FiPN6aVNzPaMu" Ids="A5ixxxbVUFaLQFKQbOlTjn,V1Sq1PGJIXYNXLSeTXeeT9" />
+                <Link Id="PsFPzZ6tzEmOMEBjat1X4R" Ids="Td2QKLywfQvOKTmD1MOjdL,KaFFE7aBBvxPsis9Jb9xNQ" />
               </Patch>
             </Node>
             <!--

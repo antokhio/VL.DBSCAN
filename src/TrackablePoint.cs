@@ -22,3 +22,4 @@ public class TrackablePoint : IPointData
     /// </summary>
     public Point Point => _point;
 }
+
